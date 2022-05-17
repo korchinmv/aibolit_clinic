@@ -1,0 +1,25 @@
+.btn {
+	border-radius: 30px;
+	padding: 24px 77px;
+	color: var(--light-color);
+	text-transform: uppercase;
+	font-weight: 700;
+
+	&--brown {
+		background-color: var(--main-color);
+		box-shadow: 0px 4px 20px var(--main-color);
+	}
+
+	&--grey {
+		background-color: var(--grey-light-color);
+		box-shadow: 0px 4px 20px var(--grey-light-color);
+	}
+
+	&--up {
+		background-color: var(--light-color);
+		border-radius: 50px;
+		color: var(--main-color);
+		font-weight: 400;
+		padding: 11px 46px;
+	}
+}

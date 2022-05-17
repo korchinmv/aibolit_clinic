@@ -1,0 +1,20 @@
+:root {
+	// базовые
+	--font-family: "FuturaNew", sans-serif;
+	--content-width: 1750px;
+	--content-width--wide: 1640px;
+	--content-width--narrow: 1350px;
+	--container-offset: 15px;
+	--container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+	--container-width--wide: calc(var(--content-width--wide) + (var(--container-offset) * 2));
+	--container-width--narrow: calc(var(--content-width--narrow) + (var(--container-offset) * 2));
+
+	// цвета
+	--light-color: #fff;
+	--black-color: #080606;
+	--main-color: #59443f;
+	--main-color: #ffc59e;
+	--grey-color: #c3b9b5;
+	--grey-light-color: #ede9e8;
+	--bg-color: #fbf8f8;
+}
