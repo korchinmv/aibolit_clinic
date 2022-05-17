@@ -203,7 +203,7 @@ const scripts = () => {
 }
 
 const imgToApp = () => {
-	return src('./src/images/**/**.{jpg,jpeg,png}')
+	return src('./src/images/**/**.{jpg,jpeg,png,svg}')
 		.pipe(dest('./app/images'))
 }
 
@@ -230,7 +230,7 @@ const watchFiles = () => {
 	watch('./src/**/*.scss', styles);
 	watch('./src/html/*.html', htmlInclude);
 	watch('./src/modules/**/*.html', htmlInclude);
-	watch('./src/images/**/**.{jpg,jpeg,png}', imgToApp);
+	watch('./src/images/**/**.{jpg,jpeg,png,svg}', imgToApp);
 	watch('./src/images/**/**.{jpg,jpeg,png}', avifImages);
 	watch('./src/images/**/**.{jpg,jpeg,png}', webpImages);
 	watch('./src/images/**.svg', svgSprites);

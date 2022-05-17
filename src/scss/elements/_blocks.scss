@@ -1,0 +1,95 @@
+.app-box {
+	display: flex;
+	align-items: center;
+
+	&__link {
+		flex-shrink: 0;
+
+		&:not(:last-child) {
+			margin-right: 20px;
+		}
+	}
+
+	&__img {
+		height: 40px;
+		object-fit: cover;
+	}
+}
+
+.social-list {
+	display: flex;
+	justify-content: space-between;
+	max-width: 310px;
+	width: 100%;
+
+	&__item {
+		&:not(:last-child) {
+			margin-right: 10px;
+		}
+
+		svg {
+			width: 40px;
+			height: 40px;
+			fill: var(--bg-light);
+			transition: fill 0.3s ease 0s;
+
+			&:hover {
+				fill: var(--grey-color);
+			}
+		}
+	}
+}
+
+.contacts-list {
+	&__item {
+		&:not(:last-child) {
+			margin-bottom: 10px;
+		}
+	}
+
+	&__link {
+		transition: color 0.3s ease 0s;
+
+		&:hover {
+			color: var(--grey-color);
+		}
+	}
+}
+
+.modal-city {
+	display: flex;
+	align-items: center;
+	color: var(--main-color-light);
+
+	&:hover {
+		color: var(--main-color-dark);
+	}
+
+	&__btn {
+		display: block;
+		text-transform: uppercase;
+		padding: 10px 0 10px 10px;
+		transition: color 0.3s ease 0s;
+
+		&:hover {
+			color: var(--main-color-dark);
+		}
+
+		@include mq("phone", max) {
+			font-size: 14px;
+		}
+	}
+
+	&__icon {
+		display: block;
+		width: 20px;
+		height: 30px;
+		fill: currentColor;
+		transition: color 0.3s ease 0s;
+
+		@include mq("phone", max) {
+			width: 15px;
+			height: 25px;
+		}
+	}
+}

@@ -4,23 +4,37 @@ body {
 }
 
 body {
+	color: var(--main-color-dark);
 	display: flex;
 	flex-direction: column;
-	font-size: 20px;
 	line-height: 1.2;
-	color: #000;
 
 	//отключаем скролл (модалки)
-	.lock & {
-		overflow: hidden;
-		touch-action: none;
-	}
+	// .lock & {
+	// 	overflow: hidden;
+	// 	touch-action: none;
+	// }
+}
+
+.dis-scroll {
+	position: fixed;
+	left: 0;
+	top: 0;
+	overflow: hidden;
+	width: 100%;
+	height: 100vh;
+	overscroll-behavior: none;
 }
 
 .page {
 	font-family: var(--font-family, sans-serif);
-	-webkit-text-size-adjust: 100%;
+	font-size: var(--main-fz);
 	scroll-behavior: smooth;
+	-webkit-text-size-adjust: 100%;
+
+	@include mq("phone", max) {
+		font-size: var(--phone-fz);
+	}
 }
 
 .page__body {
@@ -61,6 +75,8 @@ body {
 }
 
 .logo {
+	flex-shrink: 0;
+
 	&__img {
 		object-fit: contain;
 	}

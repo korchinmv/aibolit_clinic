@@ -1,3 +1,11 @@
+.burger {
+	@include burger;
+
+	@include mq("tablet-s", max) {
+		display: block;
+	}
+}
+
 .btn {
 	border-radius: 30px;
 	padding: 24px 77px;
