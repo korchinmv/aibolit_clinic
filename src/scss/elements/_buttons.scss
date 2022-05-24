@@ -8,14 +8,27 @@
 
 .btn {
 	border-radius: 30px;
-	padding: 24px 77px;
+	display: inline-block;
 	color: var(--light-color);
-	text-transform: uppercase;
 	font-weight: 700;
+	padding: 20px 80px;
+	text-transform: uppercase;
+
+	@include mq("phone", max) {
+		padding: 15px 50px;
+	}
 
 	&--brown {
-		background-color: var(--main-color);
-		box-shadow: 0px 4px 20px var(--main-color);
+		background-color: var(--main-color-light);
+		box-shadow: 0px 4px 20px var(--main-color-light);
+		transition: background-color 0.3s ease 0s, box-shadow 0.3s ease 0s;
+
+		@media (any-hover: hover) {
+			&:hover {
+				background-color: var(--main-color-dark);
+				box-shadow: 0px 4px 20px var(--main-color-dark);
+			}
+		}
 	}
 
 	&--grey {

@@ -41,7 +41,6 @@ img {
 	height: auto;
 	max-width: 100%;
 	display: block;
-	object-fit: cover;
 }
 
 input,
@@ -61,8 +60,9 @@ button {
 }
 
 a {
-	text-decoration-color: transparent;
 	color: inherit;
+	text-decoration-color: transparent;
+	transition: color 0.3s ease 0s;
 }
 
 address {

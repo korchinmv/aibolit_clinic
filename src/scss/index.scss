@@ -4,6 +4,7 @@
 @import "./base/fonts";
 @import "./base/settings";
 @import "./base/animations";
+@import "./base/patterns";
 
 //элементы страниц
 @import "./elements/buttons";
@@ -12,5 +13,6 @@
 
 //блоки страниц
 @import "../modules/_header/_header";
+@import "../modules/_main-slider/_main-slider";
 
 @import "../modules/_footer/_footer";

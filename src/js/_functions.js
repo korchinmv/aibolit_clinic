@@ -11,10 +11,7 @@
 // import './functions/fix-fullheight';
 
 // Реализация бургер-меню
-import { burger } from './functions/burger';
 
-// Реализация остановки скролла (не забудьте вызвать функцию)
-import { disableScroll } from './functions/disable-scroll';
 
 // Реализация включения скролла (не забудьте вызвать функцию)
 // import { enableScroll } from './functions/enable-scroll';
@@ -37,13 +34,6 @@ import { disableScroll } from './functions/disable-scroll';
 // import { createPopper, right} from '@popperjs/core';
 // createPopper(el, tooltip, {
 //   placement: 'right'
-// });
-
-// Подключение свайпера
-// import Swiper, { Navigation, Pagination } from 'swiper';
-// Swiper.use([Navigation, Pagination]);
-// const swiper = new Swiper(el, {
-//   slidesPerView: 'auto',
 // });
 
 // Подключение анимаций по скроллу

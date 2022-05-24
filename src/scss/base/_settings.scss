@@ -8,22 +8,12 @@ body {
 	display: flex;
 	flex-direction: column;
 	line-height: 1.2;
-
-	//отключаем скролл (модалки)
-	// .lock & {
-	// 	overflow: hidden;
-	// 	touch-action: none;
-	// }
 }
 
-.dis-scroll {
-	position: fixed;
-	left: 0;
-	top: 0;
+// отключаем скролл
+.lock {
 	overflow: hidden;
-	width: 100%;
-	height: 100vh;
-	overscroll-behavior: none;
+	touch-action: none;
 }
 
 .page {
@@ -47,7 +37,6 @@ body {
 	min-height: 100%;
 	display: flex;
 	flex-direction: column;
-	overflow: hidden; // если используете на сайте position: sticky - уберите эту настройку
 
 	//прижимаем футер
 	> main {
@@ -103,3 +92,24 @@ body {
 	overflow: hidden;
 	clip: rect(0 0 0 0);
 }
+
+// Стили для отзывчивых картинок (IBG)
+// Сниппет (HTML): s-ibg (блок c картинкой и классами)
+// Сниппет (HTML): s-ibga (ссылка c картинкой и классами)
+// [class*="-ibg"] {
+// 	position: relative;
+// 	img {
+// 		position: absolute;
+// 		width: 100%;
+// 		height: 100%;
+// 		top: 0;
+// 		left: 0;
+// 		object-fit: cover;
+// 	}
+// }
+
+// [class*="-ibg_contain"] {
+// 	img {
+// 		object-fit: contain;
+// 	}
+// }
