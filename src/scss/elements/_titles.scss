@@ -5,3 +5,18 @@
 	font-size: 80px;
 	line-height: 1.1;
 }
+
+.title-block {
+	font-family: var(--font-family-second);
+	font-weight: 400;
+	font-size: 40px;
+	color: var(--black-color);
+
+	@include mq("tablet", max) {
+		font-size: 34px;
+	}
+
+	@include mq("phone", max) {
+		font-size: 28px;
+	}
+}

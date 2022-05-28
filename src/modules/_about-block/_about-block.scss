@@ -1,0 +1,163 @@
+.about-block {
+	background-color: var(--bg-color);
+	padding: 180px 0 205px;
+
+	@include mq("tablet", max) {
+		padding: 150px 0 170px;
+	}
+
+	@include mq("tablet-s", max) {
+		padding: 120px 0 140px;
+	}
+
+	@include mq("phone", max) {
+		padding: 80px 0 100px;
+	}
+
+	@include mq("phone-s", max) {
+		padding: 50px 0 70px;
+	}
+
+	&__wrapper {
+		padding: 0 50px;
+
+		@include mq("tablet", max) {
+			padding: 0;
+		}
+	}
+
+	&__company {
+		margin-bottom: 100px;
+
+		@include mq("tablet", max) {
+			margin-bottom: 70px;
+		}
+
+		@include mq("phone", max) {
+			margin-bottom: 50px;
+		}
+	}
+}
+
+.about-company {
+	display: flex;
+	flex-direction: column;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 480px;
+	width: 100%;
+
+	&__title {
+		margin-bottom: 50px;
+		text-align: center;
+	}
+
+	&__descr {
+		line-height: 1.5;
+		margin-bottom: 35px;
+
+		@include mq("phone", max) {
+			margin-bottom: 15px;
+		}
+	}
+
+	&__link {
+		align-self: center;
+	}
+}
+
+.about-specialists {
+	&__wrapper {
+		padding: 0 55px;
+		position: relative;
+	}
+
+	&__title {
+		text-align: center;
+		margin-bottom: 50px;
+
+		@include mq("tablet", max) {
+			margin-bottom: 40px;
+		}
+
+		@include mq("phone", max) {
+			margin-bottom: 20px;
+		}
+	}
+
+	.swiper-slide {
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+.about-specialists-swiper__prev,
+.about-specialists-swiper__next {
+	background-color: var(--main-color-light);
+	border-radius: 50%;
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	top: 50%;
+	transform: translateY(-50%);
+	transition: background-color 0.3s ease 0s;
+
+	@media (any-hover: hover) {
+		&:hover {
+			background-color: var(--main-color-dark);
+		}
+	}
+
+	&::before {
+		content: "";
+		background-image: url(../images/icons/icon-arrow.svg);
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+		height: 14px;
+		display: block;
+	}
+}
+
+.about-specialists-swiper__prev {
+	&::before {
+		transform: rotate(180deg);
+	}
+
+	left: 0;
+}
+
+.about-specialists-swiper__next {
+	right: 0;
+}
+
+.about-specialists-swiper {
+	overflow: hidden;
+	margin-bottom: 35px;
+	padding: 10px 0;
+
+	@include mq("phone", max) {
+		margin-bottom: 20px;
+	}
+
+	&__link {
+		height: 178px;
+		width: 178px;
+		display: block;
+		margin: 0 auto;
+	}
+
+	&__img {
+		height: 178px;
+		width: 178px;
+		border-radius: 50%;
+		object-fit: cover;
+		transition: box-shadow 0.3s ease 0s;
+
+		@media (any-hover: hover) {
+			&:hover {
+				box-shadow: 0 0 8px var(--main-color-light);
+			}
+		}
+	}
+}

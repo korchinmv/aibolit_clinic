@@ -1,0 +1,63 @@
+.services {
+	padding: 150px 0;
+
+	@include mq("desktop-s", max) {
+		padding: 100px 0;
+	}
+
+	@include mq("tablet", max) {
+		padding: 70px 0;
+	}
+
+	@include mq("phone", max) {
+		padding: 50px 0;
+	}
+
+	&__btn-more {
+		display: none;
+
+		@include mq("desktop-s", max) {
+			display: block;
+			margin: 0 auto;
+		}
+	}
+}
+
+.services-list {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 24px;
+
+	@include mq("desktop-s", max) {
+		grid-template-columns: repeat(3, 1fr);
+		margin-bottom: 24px;
+	}
+
+	@include mq("tablet", max) {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	@include mq("tablet-s", max) {
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	&__item {
+		@include mq("desktop-s", max) {
+			display: none;
+
+			&:nth-child(-n + 6) {
+				display: block;
+			}
+		}
+
+		@include mq("phone", max) {
+			&:nth-child(-n + 6) {
+				display: none;
+			}
+
+			&:nth-child(-n + 3) {
+				display: block;
+			}
+		}
+	}
+}

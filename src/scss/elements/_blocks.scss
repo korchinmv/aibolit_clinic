@@ -117,3 +117,32 @@
 		}
 	}
 }
+
+.link {
+	font-weight: 700;
+	font-size: 20px;
+	color: var(--main-color-light);
+	text-transform: uppercase;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: color 0.3s ease 0s;
+
+	@include mq("phone", max) {
+		font-size: 18px;
+	}
+
+	&:hover {
+		color: var(--main-color-dark);
+	}
+
+	svg {
+		height: 18px;
+		width: 14px;
+		margin-left: 10px;
+
+		use {
+			fill: currentColor;
+		}
+	}
+}

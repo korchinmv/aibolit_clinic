@@ -202,6 +202,11 @@
 		background-color: transparent;
 		width: 45px;
 		height: 45px;
+
+		@include mq("phone", max) {
+			width: 30px;
+			height: 30px;
+		}
 	}
 }
 
