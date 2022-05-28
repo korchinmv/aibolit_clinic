@@ -1,0 +1,147 @@
+.why-choose {
+	@include adaptiveValue("padding-top", 315, 70);
+	@include adaptiveValue("padding-bottom", 310, 50);
+
+	&__title-top {
+		color: var(--black-color);
+		font-size: 80px;
+		font-weight: 400;
+		text-align: center;
+		max-width: 716px;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: left;
+		margin-bottom: 400px;
+		position: relative;
+
+		@include mq("desktop-s", max) {
+			font-size: 60px;
+		}
+
+		@include mq("tablet-s", max) {
+			font-size: 40px;
+			margin-bottom: 270px;
+		}
+
+		@include mq("phone", max) {
+			font-size: 30px;
+			margin-bottom: 230px;
+		}
+
+		&::after {
+			content: "";
+			display: block;
+			position: absolute;
+			background-image: url(../images/bird.png);
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: contain;
+			width: 288px;
+			height: 223px;
+			bottom: -155px;
+			right: 0;
+
+			@include mq("tablet-s", max) {
+				width: 230px;
+				height: 270px;
+				bottom: -225px;
+			}
+		}
+
+		span {
+			display: block;
+			color: var(--main-color-dark);
+			font-family: var(--font-family-second);
+			font-weight: 700;
+			font-size: 144px;
+
+			@include mq("desktop-s", max) {
+				font-size: 100px;
+			}
+
+			@include mq("tablet-s", max) {
+				font-size: 80px;
+			}
+
+			@include mq("phone", max) {
+				font-size: 60px;
+			}
+
+			@include mq("phone-s", max) {
+				font-size: 45px;
+			}
+		}
+	}
+
+	&__title {
+		text-align: center;
+		margin-bottom: 105px;
+
+		@include mq("phone", max) {
+			margin-bottom: 50px;
+		}
+	}
+}
+
+.why-choose-list {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	column-gap: 95px;
+	row-gap: 70px;
+
+	@include mq("desktop", max) {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	@include mq("tablet", max) {
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	&__item {
+		@include mq("tablet", max) {
+			text-align: center;
+		}
+	}
+
+	&__title {
+		color: var(--black-color);
+		font-family: var(--font-family-second);
+		font-size: 30px;
+		font-weight: 400;
+		margin-bottom: 35px;
+
+		@include mq("phone", max) {
+			font-size: 26px;
+			margin-bottom: 20px;
+		}
+	}
+
+	&__body {
+		display: flex;
+		align-items: center;
+
+		@include mq("tablet", max) {
+			display: block;
+		}
+	}
+
+	&__img {
+		margin-right: 50px;
+		width: 77px;
+		height: 77px;
+
+		@include mq("desktop", max) {
+			align-self: start;
+		}
+
+		@include mq("tablet", max) {
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+
+	&__text {
+		line-height: 1.6;
+	}
+}
