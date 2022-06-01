@@ -1,0 +1,76 @@
+.app-block {
+	color: var(--light-color);
+	background-color: var(--main-color-light);
+	padding: 205px 0 360px;
+
+	@include mq("tablet", max) {
+		padding: 70px 0;
+	}
+
+	@include mq("phone", max) {
+		padding: 50px 0;
+	}
+
+	.container {
+		&--content-narrow {
+			position: relative;
+		}
+	}
+
+	&__wrapper {
+		display: flex;
+
+		@include mq("tablet", max) {
+			display: block;
+			text-align: center;
+		}
+	}
+
+	&__content {
+		z-index: 2;
+	}
+
+	&__soon {
+		display: inline-block;
+		font-size: 30px;
+		margin-bottom: 30px;
+	}
+
+	&__title {
+		color: var(--light-color);
+		max-width: 830px;
+		width: 100%;
+		margin-bottom: 30px;
+
+		@include mq("desktop-s", max) {
+			font-size: 50px;
+			max-width: 550px;
+		}
+
+		@include mq("tablet", max) {
+			margin-left: auto;
+			margin-right: auto;
+			text-align: left;
+		}
+
+		@include mq("tablet-s", max) {
+			font-size: 36px;
+		}
+	}
+
+	&__img {
+		position: absolute;
+		right: 0;
+		bottom: -390px;
+
+		@include mq("tablet", max) {
+			display: none;
+		}
+	}
+
+	&__app {
+		@include mq("tablet", max) {
+			justify-content: center;
+		}
+	}
+}

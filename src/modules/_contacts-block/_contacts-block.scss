@@ -1,0 +1,98 @@
+.contacts-block {
+	padding: 235px 0 210px;
+
+	@include mq("desktop-s", max) {
+		padding: 150px 0 110px;
+	}
+
+	@include mq("tablet-s", max) {
+		padding: 130px 0 130px;
+	}
+
+	@include mq("phone", max) {
+		padding: 80px 0 60px;
+	}
+
+	&__title {
+		margin-bottom: 70px;
+
+		@include mq("phone", max) {
+			margin-bottom: 40px;
+		}
+	}
+
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+
+		@include mq("tablet", max) {
+			display: block;
+		}
+	}
+
+	&__box {
+		margin-right: 30px;
+
+		@include mq("tablet", max) {
+			margin-right: 0;
+			margin-bottom: 60px;
+		}
+	}
+}
+
+.contacts {
+	&:not(:last-child) {
+		margin-bottom: 40px;
+	}
+
+	&__title {
+		margin-bottom: 20px;
+	}
+
+	&__item {
+		padding-left: 50px;
+		position: relative;
+
+		&::before {
+			content: "";
+			position: absolute;
+			left: 0;
+			top: -3px;
+			width: 25px;
+			height: 30px;
+			background-position: center;
+			background-size: contain;
+			background-repeat: no-repeat;
+		}
+
+		&--adress::before {
+			background-image: url(../images/icons/icon-marker.svg);
+		}
+
+		&--tel::before {
+			background-image: url(../images/icons/icon-phone.svg);
+		}
+
+		&--time::before {
+			background-image: url(../images/icons/icon-clock.svg);
+		}
+
+		&:not(:last-child) {
+			margin-bottom: 20px;
+		}
+	}
+}
+
+.map {
+	max-width: 900px;
+	height: 525px;
+	width: 100%;
+
+	@include mq("tablet", max) {
+		max-width: auto;
+	}
+
+	@include mq("tablet-s", max) {
+		height: 300px;
+	}
+}

@@ -20,3 +20,14 @@
 		font-size: 28px;
 	}
 }
+
+.title-card {
+	color: var(--black-color);
+	font-family: var(--font-family-second);
+	font-size: 30px;
+	font-weight: 400;
+
+	@include mq("phone", max) {
+		font-size: 26px;
+	}
+}

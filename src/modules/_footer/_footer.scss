@@ -47,6 +47,7 @@
 	&__bottom {
 		display: flex;
 		justify-content: space-between;
+		@include adaptiveValue("padding-left", 110, 1);
 
 		@include mq("tablet", max) {
 			display: block;
