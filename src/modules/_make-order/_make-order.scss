@@ -1,0 +1,44 @@
+.make-order {
+	padding: 75px 0 105px;
+
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+
+		@include mq("desktop", max) {
+			display: block;
+		}
+	}
+
+	&__title {
+		max-width: 483px;
+		width: 100%;
+		margin-top: 80px;
+		@include adaptiveValue("margin-right", 70, 20);
+
+		@include mq("desktop", max) {
+			margin-top: 0;
+			margin-bottom: 50px;
+			max-width: 100%;
+		}
+
+		@include mq("phone", max) {
+			margin-bottom: 30px;
+		}
+	}
+
+	&__box {
+	}
+	&__back {
+		display: inline-block;
+		margin-bottom: 60px;
+
+		@include mq("desktop", max) {
+			margin-bottom: 40px;
+		}
+
+		@include mq("phone", max) {
+			margin-bottom: 20px;
+		}
+	}
+}

@@ -132,8 +132,10 @@
 		font-size: 18px;
 	}
 
-	&:hover {
-		color: var(--main-color-dark);
+	@media (any-hover: hover) {
+		&:hover {
+			color: var(--main-color-dark);
+		}
 	}
 
 	svg {
@@ -144,5 +146,49 @@
 		use {
 			fill: currentColor;
 		}
+	}
+}
+
+.link-back {
+	color: var(--main-color-light);
+	font-weight: 700;
+	text-transform: uppercase;
+	position: relative;
+	padding-left: 20px;
+
+	@media (any-hover: hover) {
+		&:hover {
+			color: var(--main-color-dark);
+		}
+	}
+
+	svg {
+		position: absolute;
+		display: inline-block;
+		align-self: center;
+		fill: currentColor;
+		transform: rotate(180deg);
+		height: 18px;
+		width: 12px;
+		left: 0;
+		top: 3px;
+	}
+}
+
+.bank-cards {
+	background-color: var(--grey-light-color);
+	border-radius: 20px;
+
+	display: flex;
+	align-items: center;
+
+	&__item {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 50px;
+		width: 50px;
+	}
+	&__img {
 	}
 }

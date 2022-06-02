@@ -63,21 +63,11 @@
 			max-width: 830px;
 		}
 
-		@include mq("desktop", max) {
-			font-size: 60px;
-		}
-
-		@include mq("desktop-s", max) {
-			font-size: 56px;
-		}
-
 		@include mq("tablet-s", max) {
-			font-size: 46px;
 			margin-bottom: 30px;
 		}
 
 		@include mq("phone", max) {
-			font-size: 36px;
 			margin-bottom: 20px;
 		}
 	}

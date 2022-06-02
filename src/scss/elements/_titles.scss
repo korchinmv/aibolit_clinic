@@ -4,6 +4,22 @@
 	font-weight: 400;
 	font-size: 80px;
 	line-height: 1.1;
+
+	@include mq("desktop", max) {
+		font-size: 60px;
+	}
+
+	@include mq("desktop-s", max) {
+		font-size: 56px;
+	}
+
+	@include mq("tablet-s", max) {
+		font-size: 46px;
+	}
+
+	@include mq("phone", max) {
+		font-size: 36px;
+	}
 }
 
 .title-block {

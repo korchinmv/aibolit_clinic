@@ -1,0 +1,182 @@
+.record-form {
+	&__input,
+	&__textarea {
+		background-color: var(--light-color);
+		border: 1px solid var(--grey-light-color);
+		border-radius: 20px;
+		color: var(--main-color-dark);
+		display: block;
+		padding: 16px;
+		outline: transparent;
+		transition: box-shadow 0.3s ease 0s;
+
+		&:focus {
+			border: 1px solid var(--grey-color);
+			box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1);
+		}
+	}
+
+	&__input {
+		&--name {
+			width: 100%;
+			margin-bottom: 25px;
+
+			@include mq("phone", max) {
+				margin-bottom: 15px;
+			}
+		}
+
+		&::placeholder {
+			color: var(--grey-color);
+		}
+	}
+
+	&__box {
+		display: flex;
+		margin-bottom: 25px;
+		max-width: 910px;
+		width: 100%;
+
+		@include mq("desktop", max) {
+			max-width: 100%;
+		}
+
+		@include mq("tablet-s", max) {
+			display: block;
+		}
+
+		@include mq("phone", max) {
+			margin-bottom: 15px;
+		}
+
+		.record-form__input {
+			width: 100%;
+
+			&:not(:last-child) {
+				margin-right: 25px;
+
+				@include mq("tablet-s", max) {
+					margin-right: 0;
+					margin-bottom: 25px;
+				}
+
+				@include mq("phone", max) {
+					margin-bottom: 15px;
+				}
+			}
+		}
+	}
+
+	&__textarea {
+		height: 170px;
+		resize: none;
+		max-width: 910px;
+		margin-bottom: 25px;
+		width: 100%;
+
+		@include mq("desktop", max) {
+			max-width: 100%;
+		}
+	}
+
+	&__descr {
+		padding: 0 16px;
+		margin-bottom: 15px;
+	}
+
+	&__btn {
+		display: block;
+		margin: 0 auto;
+		transition: color 0.3s ease 0s;
+
+		@media (any-hover: hover) {
+			&:hover {
+				color: var(--main-color-dark);
+			}
+		}
+	}
+}
+
+.pay {
+	background-color: var(--grey-light-color);
+	border-radius: 20px;
+	padding: 16px;
+
+	&__bank-cards {
+		margin-bottom: 10px;
+	}
+
+	&__input {
+		display: block;
+		border: 1px solid transparent;
+		border-radius: 20px;
+		padding: 16px;
+		outline: transparent;
+		transition: box-shadow 0.3s ease 0s;
+
+		&:focus {
+			border: 1px solid var(--grey-color);
+			box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1);
+		}
+
+		&--card-number {
+			width: 100%;
+			margin-bottom: 25px;
+
+			@include mq("phone", max) {
+				margin-bottom: 15px;
+			}
+		}
+
+		&--num {
+			width: 80px;
+			padding: 13px 13px 13px 24px;
+		}
+	}
+
+	&__box {
+		display: flex;
+		align-items: center;
+		margin-bottom: 25px;
+
+		@include mq("phone", max) {
+			margin-bottom: 15px;
+		}
+	}
+
+	&__label {
+		display: block;
+		line-height: 1.7;
+		text-align: center;
+
+		&:not(:last-child) {
+			@include adaptiveValue("margin-right", 30, 10);
+		}
+	}
+
+	&__date {
+		display: flex;
+		@include adaptiveValue("margin-right", 30, 10);
+	}
+
+	&__month,
+	&__year {
+		appearance: none;
+		border: 1px solid transparent;
+		border-radius: 20px;
+		background-image: url(../images/arrow-select.svg);
+		background-position: right;
+		background-repeat: no-repeat;
+		background-position-x: calc(100% - 8px);
+		background-color: var(--light-color);
+		display: block;
+		transition: box-shadow 0.3s ease 0s;
+		padding: 13px 30px 13px 16px;
+		outline: transparent;
+
+		&:focus {
+			border: 1px solid var(--grey-color);
+			box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1);
+		}
+	}
+}

@@ -1,0 +1,98 @@
+.record-block {
+	padding: 75px 0 535px;
+
+	@include mq("desktop", max) {
+		padding-bottom: 300px;
+	}
+
+	@include mq("tablet-s", max) {
+		padding-bottom: 150px;
+	}
+
+	@include mq("phone", max) {
+		padding-bottom: 100px;
+	}
+
+	@include mq("phone-s", max) {
+		padding: 50px 0 70px;
+	}
+
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+
+		@include mq("desktop", max) {
+			display: block;
+		}
+	}
+
+	&__title {
+		max-width: 360px;
+		width: 100%;
+		margin-top: 80px;
+		@include adaptiveValue("margin-right", 190, 30);
+
+		@include mq("desktop", max) {
+			margin-top: 0;
+			margin-bottom: 50px;
+			max-width: 100%;
+		}
+
+		@include mq("phone", max) {
+			margin-bottom: 30px;
+		}
+	}
+
+	&__box {
+		flex: 1 1 910px;
+	}
+
+	&__back {
+		display: inline-block;
+		margin-bottom: 60px;
+
+		@include mq("desktop", max) {
+			margin-bottom: 40px;
+		}
+
+		@include mq("phone", max) {
+			margin-bottom: 20px;
+		}
+	}
+
+	&__link {
+		display: flex;
+		background-color: var(--light-color);
+		border: 1px solid transparent;
+		border-radius: 20px;
+		box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1);
+		padding: 32px;
+		justify-content: space-between;
+		transition: border 0.3s ease 0s;
+
+		@include mq("tablet-s", max) {
+			padding: 20px;
+		}
+
+		&:hover {
+			border: 1px solid #c3b9b5;
+		}
+
+		&:not(:last-child) {
+			margin-bottom: 25px;
+
+			@include mq("tablet-s", max) {
+				margin-bottom: 15px;
+			}
+		}
+	}
+
+	&__descr,
+	&__price {
+		color: var(--black-color);
+		display: block;
+	}
+
+	&__price {
+	}
+}
