@@ -191,7 +191,7 @@ function initSliders() {
 		});
 	}
 }
-// Скролл на базе слайдера (по классу swiper_scroll для оболочки слайдера)
+// // Скролл на базе слайдера(по классу swiper_scroll для оболочки слайдера)
 // function initSlidersScroll() {
 // 	// Добавление классов слайдера
 // 	// при необходимости отключить
@@ -224,9 +224,9 @@ function initSliders() {
 // 	}
 // }
 
-// window.addEventListener("load", function (e) {
-// 	// Запуск инициализации слайдеров
-// 	initSliders();
-// 	// Запуск инициализации скролла на базе слайдера (по классу swiper_scroll)
-// 	//initSlidersScroll();
-// });
+window.addEventListener("load", function (e) {
+	// Запуск инициализации слайдеров
+	initSliders();
+	// Запуск инициализации скролла на базе слайдера (по классу swiper_scroll)
+	//initSlidersScroll();
+});

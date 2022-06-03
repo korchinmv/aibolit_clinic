@@ -1,0 +1,33 @@
+.about-page {
+	padding: 100px 0;
+
+	&__img {
+		object-fit: contain;
+		margin-bottom: 50px;
+		width: 100%;
+
+		@include mq("phone", max) {
+			margin-bottom: 30px;
+		}
+	}
+
+	&__title {
+		margin-bottom: 50px;
+
+		@include mq("phone", max) {
+			margin-bottom: 30px;
+		}
+	}
+
+	&__text {
+		margin-bottom: 100px;
+
+		@include mq("desktop-s", max) {
+			margin-bottom: 70px;
+		}
+
+		@include mq("phone", max) {
+			margin-bottom: 30px;
+		}
+	}
+}

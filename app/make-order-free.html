@@ -6,14 +6,14 @@
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="theme-color" content="#111111">
-	<title>Айболит - ветеринарная клиника | запись на прием</title>
+	<title>Айболит - ветеринарная клиника | запись на прием в клинике</title>
 	<link rel="preload" href="fonts/FuturaNew-Bold.woff" as="font" type="font/woff" crossorigin>
 	<link rel="preload" href="fonts/FuturaNew-Bold.woff2" as="font" type="font/woff2" crossorigin>
 	<link rel="preload" href="fonts/FuturaNew-Regular.woff" as="font" type="font/woff" crossorigin>
 	<link rel="preload" href="fonts/FuturaNew-Regular.woff2" as="font" type="font/woff2" crossorigin>
 	<link rel="preload" href="fonts/SchoolBook-Regular.woff" as="font" type="font/woff" crossorigin>
 	<link rel="preload" href="fonts/SchoolBook-Regular.woff2" as="font" type="font/woff2" crossorigin>
-	<link rel="stylesheet" href="css/record-page.min.css">
+	<link rel="stylesheet" href="css/make-order.min.css">
 	<script defer src="js/main.min.js"></script>
 </head>
 
@@ -55,29 +55,36 @@
 	</div>
 </header>
 		<main class="main">
-			<section class="record-block">
+			<section class="make-order">
 	<div class="container container--content-narrow">
-		<div class="record-block__wrapper">
-			<h1 class="record-block__title main-title">Запись на прием</h1>
+		<div class="make-order__wrapper">
+			<h1 class="make-order__title main-title">Запись на прием в клинике</h1>
 
-			<div class="record-block__box">
+			<div class="make-order__box">
 
-				<a class="record-block__back link-back" href="index.html">
+				<a class="make-order__back link-back" href="index.html">
 					<svg>
 						<use xlink:href="images/sprite.svg#icon-arrow"></use>
 					</svg>
 					Назад
 				</a>
 
-				<a class="record-block__link" href="make-order.html">
-					<span class="record-block__descr">Онлайн-консультация</span>
-					<span class="record-block__price">2000 ₽</span>
-				</a>
+				<form class="record-form" action="#">
+					<input class="record-form__input record-form__input--name" type="fio" name="fio" placeholder="ФИО"
+						required="required">
 
-				<a class="record-block__link" href="make-order-free.html">
-					<span class="record-block__descr">Прием в клинике</span>
-					<span class="record-block__price">Бесплатно</span>
-				</a>
+					<div class="record-form__box">
+						<input class="record-form__input" type="tel" name="tel" id="tel" required placeholder="Ваш номер телефона">
+						<input class="record-form__input" type="text" name="date" placeholder="Желаемая дата и время приема"
+							required>
+					</div>
+
+					<textarea class="record-form__textarea" name="message" placeholder="Кратко опишите проблему"
+						required></textarea>
+
+					<button class="record-form__btn btn btn--grey" type="submit">Оплатить</button>
+				</form>
+
 			</div>
 		</div>
 	</div>
@@ -218,6 +225,7 @@
 		</div>
 	</div>
 </footer>
+		
 	</div>
 </body>
 

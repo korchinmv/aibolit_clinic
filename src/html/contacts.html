@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+@include('../modules/_head.html', {
+"title":"Главная страница",
+"favicon":"favicon.ico",
+"css":"css/index.min.css"
+})
+
+<body class="page__body">
+	<div class="wrapper">
+		@include('../modules/_header/_header-small.html')
+		<main class="main">
+			@include('../modules/_contacts-block/_contacts-block.html')
+		</main>
+		@include('../modules/_footer/_footer.html')
+		<!-- @include('../modules/_modal.html') -->
+	</div>
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=e045d92b-4953-438d-a0e5-17ecdcfb7778&amp;lang=ru_RU"></script>
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+<section class="make-order">
+	<div class="container container--content-narrow">
+		<div class="make-order__wrapper">
+			<h1 class="make-order__title main-title">Запись на прием в клинике</h1>
+
+			<div class="make-order__box">
+
+				<a class="make-order__back link-back" href="index.html">
+					<svg>
+						<use xlink:href="images/sprite.svg#icon-arrow"></use>
+					</svg>
+					Назад
+				</a>
+
+				<form class="record-form" action="#">
+					<input class="record-form__input record-form__input--name" type="fio" name="fio" placeholder="ФИО"
+						required="required">
+
+					<div class="record-form__box">
+						<input class="record-form__input" type="tel" name="tel" id="tel" required placeholder="Ваш номер телефона">
+						<input class="record-form__input" type="text" name="date" placeholder="Желаемая дата и время приема"
+							required>
+					</div>
+
+					<textarea class="record-form__textarea" name="message" placeholder="Кратко опишите проблему"
+						required></textarea>
+
+					<button class="record-form__btn btn btn--grey" type="submit">Оплатить</button>
+				</form>
+
+			</div>
+		</div>
+	</div>
+</section>

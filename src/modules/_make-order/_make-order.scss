@@ -1,6 +1,10 @@
 .make-order {
 	padding: 75px 0 105px;
 
+	&__box {
+		flex: 1;
+	}
+
 	&__wrapper {
 		display: flex;
 		justify-content: space-between;
@@ -27,8 +31,6 @@
 		}
 	}
 
-	&__box {
-	}
 	&__back {
 		display: inline-block;
 		margin-bottom: 60px;
