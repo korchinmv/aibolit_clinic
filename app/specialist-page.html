@@ -6,20 +6,20 @@
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="theme-color" content="#111111">
-	<title>Айболит - ветеринарная клиника | Оформление заказа</title>
+	<title>Айболит - ветеринарная клиника | Анкета специалиста</title>
 	<link rel="preload" href="fonts/FuturaNew-Bold.woff" as="font" type="font/woff" crossorigin>
 	<link rel="preload" href="fonts/FuturaNew-Bold.woff2" as="font" type="font/woff2" crossorigin>
 	<link rel="preload" href="fonts/FuturaNew-Regular.woff" as="font" type="font/woff" crossorigin>
 	<link rel="preload" href="fonts/FuturaNew-Regular.woff2" as="font" type="font/woff2" crossorigin>
 	<link rel="preload" href="fonts/SchoolBook-Regular.woff" as="font" type="font/woff" crossorigin>
 	<link rel="preload" href="fonts/SchoolBook-Regular.woff2" as="font" type="font/woff2" crossorigin>
-	<link rel="stylesheet" href="css/make-order.min.css">
+	<link rel="stylesheet" href="css/specialist-page.min.css">
 	<script defer src="js/main.min.js"></script>
 </head>
 
 <body class="page__body">
 	<div class="wrapper">
-		<header class="header header--small">
+		<header class="header">
 	<div class="container">
 
 		<nav class="header__nav" title="">
@@ -29,7 +29,7 @@
 
 			<ul class="menu">
 				<li class="menu__item"><a class="menu__link" href="record-page.html">Запись на прием</a></li>
-				<li class="menu__item"><a class="menu__link" href="about-team.html">Выбор специалиста</a></li>
+				<li class="menu__item"><a class="menu__link" href="#">Выбор специалиста</a></li>
 				<li class="menu__item"><a class="menu__link" href="about-team.html">О нас</a></li>
 				<li class="menu__item"><a class="menu__link" href="contacts.html">Контакты</a></li>
 			</ul>
@@ -55,102 +55,7 @@
 	</div>
 </header>
 		<main class="main">
-			<section class="make-order">
-	<div class="container container--content-narrow">
-		<div class="make-order__wrapper">
-			<h1 class="make-order__title main-title">Оформление заказа</h1>
-
-			<div class="make-order__box">
-
-				<a class="make-order__back link-back" href="index.html">
-					<svg>
-						<use xlink:href="images/sprite.svg#icon-arrow"></use>
-					</svg>
-					Назад
-				</a>
-
-				<form class="record-form" action="#">
-					<input class="record-form__input record-form__input--name" type="fio" name="fio" placeholder="ФИО"
-						required="required">
-
-					<div class="record-form__box">
-						<input class="record-form__input" type="tel" name="tel" id="tel" required placeholder="Ваш номер телефона">
-						<input class="record-form__input" type="text" name="date" placeholder="Желаемая дата и время приема"
-							required>
-					</div>
-
-					<textarea class="record-form__textarea" name="message" placeholder="Кратко опишите проблему"
-						required></textarea>
-
-					<div class="pay">
-						<ul class="pay__bank-cards bank-cards">
-							<li class="bank-cards__item"><img class="bank-cards__img" src="images/pay/mir.svg"
-									alt="Банковская карта МИР"></li>
-
-							<li class="bank-cards__item"><img class="bank-cards__img" src="images/pay/mc.svg"
-									alt="Банковская карта Мастер Кард"></li>
-
-							<li class="bank-cards__item"><img class="bank-cards__img" src="images/pay/visa.svg"
-									alt="Банковская карта Виза"></li>
-						</ul>
-
-						<input class="pay__input pay__input--card-number" type="text" id="card-number"
-							placeholder="Оплата банковской картой">
-
-						<div class="pay__box">
-							<div class="pay__date">
-								<label class="pay__label" for="month">Месяц
-									<select class="pay__month" name="month" id="month">
-										<option value="january">1</option>
-										<option value="february">2</option>
-										<option value="march">3</option>
-										<option value="april">4</option>
-										<option value="may">5</option>
-										<option value="june">6</option>
-										<option value="july">7</option>
-										<option value="august">8</option>
-										<option value="september">9</option>
-										<option value="october">10</option>
-										<option value="november">11</option>
-										<option value="december">12</option>
-									</select>
-								</label>
-
-								<label class="pay__label" for="year">Год
-									<select class="pay__year" name="year" id="year">
-										<option value="year 2022">2022</option>
-										<option value="year 2023">2023</option>
-										<option value="year 2024">2024</option>
-										<option value="year 2025">2025</option>
-										<option value="year 2026">2026</option>
-										<option value="year 2027">2027</option>
-										<option value="year 2028">2028</option>
-										<option value="year 2029">2029</option>
-										<option value="year 2030">2030</option>
-									</select>
-								</label>
-							</div>
-
-							<label class="pay__label" for="cvv2">CVV2
-								<input class="pay__input pay__input--num" type="text" name="cvv2" id="cvv2" placeholder="___"
-									maxlength="3">
-							</label>
-
-						</div>
-
-						<div class="record-form__descr">
-							<p>Ваши личные данные будут использоваться для обработки ваших заказов, упрощения вашей работы с сайтом и
-								для других целей, описанных в нашей политика конфиденциальности.</p>
-						</div>
-
-						<button class="record-form__btn btn" type="submit">Оплатить</button>
-					</div>
-				</form>
-
-			</div>
-		</div>
-	</div>
-</section>
+			
 		</main>
 		<footer class="footer">
 	<div class="container container--content-wide">

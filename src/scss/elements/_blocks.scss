@@ -208,6 +208,10 @@
 			margin-right: 0;
 			margin-bottom: 60px;
 		}
+
+		@include mq("phone", max) {
+			margin-bottom: 40px;
+		}
 	}
 
 	&__title {
@@ -224,6 +228,10 @@
 		font-size: 20px;
 		line-height: 1.5;
 		text-transform: uppercase;
+
+		@include mq("phone", max) {
+			font-size: 18px;
+		}
 	}
 
 	&__item {
@@ -274,5 +282,74 @@
 				transform: scale(1.01);
 			}
 		}
+	}
+}
+
+.price-top {
+	display: flex;
+	justify-content: space-between;
+
+	&__descr {
+		margin-right: 10px;
+	}
+}
+
+.pagination {
+	color: var(--grey-color);
+
+	&__list {
+		display: flex;
+	}
+	&__item {
+		@media (any-hover: hover) {
+			&:hover {
+				color: var(--black-color);
+			}
+		}
+
+		&:not(:last-child) {
+			margin-right: 15px;
+		}
+	}
+	&__link {
+		&--active {
+			color: var(--black-color);
+		}
+	}
+}
+
+.service-price {
+	&__item {
+		display: flex;
+		justify-content: space-between;
+		color: var(--black-color);
+		padding: 14px 30px;
+
+		&:nth-child(odd) {
+			background-color: rgba(#ede9e8, 0.3);
+			border-radius: 15px;
+		}
+	}
+
+	&__name {
+		margin-right: 5px;
+	}
+}
+
+.services-slider {
+	&__prev {
+	}
+	&__next {
+	}
+}
+
+.service {
+	&__link {
+	}
+	&__title {
+	}
+	&__botom {
+	}
+	&__quantity {
 	}
 }

@@ -2,8 +2,9 @@
 	padding: 100px 0;
 
 	&__img {
-		object-fit: contain;
+		border-radius: 20px;
 		margin-bottom: 50px;
+		object-fit: contain;
 		width: 100%;
 
 		@include mq("phone", max) {

@@ -14,7 +14,6 @@
 	&__link {
 		display: flex;
 		flex-direction: column;
-		width: 100%;
 		height: 100%;
 		padding: 24px;
 
@@ -36,6 +35,10 @@
 		font-weight: 400;
 		font-size: 30px;
 		margin-bottom: 5px;
+
+		@include mq("phone", max) {
+			font-size: 20px;
+		}
 	}
 
 	&__botom {
@@ -48,6 +51,10 @@
 		display: block;
 		font-size: 20px;
 		align-self: flex-end;
+
+		@include mq("phone", max) {
+			font-size: 18px;
+		}
 	}
 
 	svg {
@@ -58,6 +65,11 @@
 		@include mq("tablet", max) {
 			width: 80px;
 			height: 80px;
+		}
+
+		@include mq("phone", max) {
+			width: 50px;
+			height: 50px;
 		}
 
 		use {
@@ -130,5 +142,48 @@
 		&:not(:last-child) {
 			margin-bottom: 20px;
 		}
+	}
+}
+
+.make-appointment-card {
+	background-color: var(--light-color);
+	border-radius: 20px;
+	box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1);
+
+	&__link {
+		display: block;
+		border-radius: 20px;
+		padding: 20px;
+		transition: background-color 0.3s ease 0s;
+
+		@media (any-hover: hover) {
+			&:hover {
+				background-color: var(--main-color-light);
+
+				.make-appointment-card__name,
+				.make-appointment-card__time {
+					color: var(--light-color);
+				}
+			}
+		}
+	}
+
+	&__name {
+		font-size: 24px;
+		margin-bottom: 10px;
+		color: var(--black-color);
+
+		@include mq("phone", max) {
+			font-size: 18px;
+		}
+	}
+
+	&__time {
+		color: var(--grey-color);
+	}
+
+	&__name,
+	&__time {
+		transition: color 0.3s ease 0s;
 	}
 }

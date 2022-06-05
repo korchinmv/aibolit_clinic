@@ -91,39 +91,7 @@
 	}
 }
 
-.about-specialists-swiper__prev,
-.about-specialists-swiper__next {
-	background-color: var(--main-color-light);
-	border-radius: 50%;
-	position: absolute;
-	width: 40px;
-	height: 40px;
-	top: 50%;
-	transform: translateY(-50%);
-	transition: background-color 0.3s ease 0s;
-
-	@media (any-hover: hover) {
-		&:hover {
-			background-color: var(--main-color-dark);
-		}
-	}
-
-	&::before {
-		content: "";
-		background-image: url(../images/icons/icon-arrow.svg);
-		background-repeat: no-repeat;
-		background-size: contain;
-		background-position: center;
-		height: 14px;
-		display: block;
-	}
-}
-
 .about-specialists-swiper__prev {
-	&::before {
-		transform: rotate(180deg);
-	}
-
 	left: 0;
 }
 
